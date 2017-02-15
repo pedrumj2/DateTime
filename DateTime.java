@@ -60,6 +60,7 @@ public class DateTime {
         else if (__dateTime.month()<month()){
             return true;
         }
+
         if(__dateTime.day() > day()){
             return false;
         }
@@ -67,21 +68,21 @@ public class DateTime {
             return true;
         }
 
-        if (__dateTime.hour() < hour()){
+        if (__dateTime.hour() > hour()){
             return false;
         }
-        else if (__dateTime.hour() > hour()){
+        else if (__dateTime.hour() < hour()){
             return true;
         }
 
-        if(__dateTime.minute() < minute()){
+        if(__dateTime.minute() > minute()){
             return false;
         }
-        else if(__dateTime.minute() > minute()){
+        else if(__dateTime.minute() < minute()){
             return true;
         }
 
-        if (__dateTime.seconds() < seconds()){
+        if (__dateTime.seconds() > seconds()){
             return false;
         }
         else {
