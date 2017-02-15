@@ -29,7 +29,7 @@ public class DateTime {
         return __calendar.get(Calendar.MONTH);
     }
     public int day(){
-        return __calendar.get(Calendar.DATE );
+        return __calendar.get(Calendar.DAY_OF_MONTH );
     }
     public int hour(){
         return __calendar.get(Calendar.HOUR_OF_DAY);
