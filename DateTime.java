@@ -32,7 +32,7 @@ public class DateTime {
         return __calendar.get(Calendar.DATE );
     }
     public int hour(){
-        return __calendar.get(Calendar.HOUR);
+        return __calendar.get(Calendar.HOUR_OF_DAY);
     }
     public int minute(){
         return __calendar.get(Calendar.MINUTE   );
