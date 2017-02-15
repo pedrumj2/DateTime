@@ -58,34 +58,34 @@ public class DateTime {
             return false;
         }
         else if (__dateTime.month()<month()){
-            return false;
+            return true;
         }
         if(__dateTime.day() > day()){
             return false;
         }
         else if(__dateTime.day() < day()){
-            return false;
+            return true;
         }
 
         if (__dateTime.hour() < hour()){
             return false;
         }
         else if (__dateTime.hour() > hour()){
-            return false;
+            return true;
         }
 
         if(__dateTime.minute() < minute()){
             return false;
         }
         else if(__dateTime.minute() > minute()){
-            return false;
+            return true;
         }
 
         if (__dateTime.seconds() < seconds()){
             return false;
         }
         else {
-            return false;
+            return true;
         }
 
     }
