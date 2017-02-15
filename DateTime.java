@@ -50,22 +50,44 @@ public class DateTime {
         if (__dateTime.year()> year()){
             return false;
         }
-        else if (__dateTime.month()>month()){
+        else if (__dateTime.year()< year()){
+            return true;
+        }
+
+        if (__dateTime.month()>month()){
             return false;
         }
-        else if(__dateTime.day() > day()){
+        else if (__dateTime.month()<month()){
+            return false;
+        }
+        if(__dateTime.day() > day()){
+            return false;
+        }
+        else if(__dateTime.day() < day()){
+            return false;
+        }
+
+        if (__dateTime.hour() < hour()){
             return false;
         }
         else if (__dateTime.hour() > hour()){
             return false;
         }
+
+        if(__dateTime.minute() < minute()){
+            return false;
+        }
         else if(__dateTime.minute() > minute()){
             return false;
         }
-        else if (__dateTime.seconds() > seconds()){
+
+        if (__dateTime.seconds() < seconds()){
             return false;
         }
-        return true;
+        else {
+            return false;
+        }
+
     }
 
     public String toString(){
